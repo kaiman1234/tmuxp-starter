@@ -8,7 +8,7 @@ pudb = "*"
 ipython = "*"
 
 [packages]
-click = "*"
+click = ">=8.0"
 tmuxp-starter = {editable = true, path = "."}
 
 [requires]
