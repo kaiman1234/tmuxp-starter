@@ -1,0 +1,28 @@
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry]
+name = "tmuxp-starter"
+version = "0.4.0"
+description = "Starter for tmuxp sessions"
+authors = ["Kai Kuhlmann <kaiman2468@gmail.com>"]
+license = ""
+readme = "README.md"
+packages = [
+    { include = "tmuxp_starter" },
+]
+
+[tool.poetry.urls]
+repository = "https://github.com/kaiman1234/tmuxp-starter"
+
+[tool.poetry.scripts]
+txp = "tmuxp_starter.cli:main"
+
+[tool.poetry.dependencies]
+python = ">=3.8"
+click = "*"
+
+[tool.poetry.group.dev.dependencies]
+pudb = "*"
+ipython = "*"
