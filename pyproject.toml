@@ -26,3 +26,14 @@ click = "*"
 [tool.poetry.group.dev.dependencies]
 pudb = "*"
 ipython = "*"
+
+
+[[tool.poetry_bumpversion.replacements]]
+files = ["tmuxp_starter/__init__.py"]
+search = '__version__ = "{current_version}"'
+replace = '__version__ = "{new_version}"'
+
+[[tool.poetry_bumpversion.replacements]]
+files = ["README.md"]
+search = 'Version: {current_version}'
+replace = 'Version: {new_version}'
